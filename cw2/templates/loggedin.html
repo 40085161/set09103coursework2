@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="static/style.css"/>
+</head>
+
+<body>
+<div id="conatiner">
+{% include "header.html" %}
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+      {% for message in messages %}
+        <h1>{{ message | safe}}</h1>
+      {% endfor %}
+    {% endif %}
+{% endwith %}
+
+{% include "footer.html" %}
+</body>
+</html>

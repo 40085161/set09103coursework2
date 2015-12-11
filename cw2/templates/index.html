@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="static/style.css"/>
+</head>
+
+<body>
+<div id="container">
+{% include "header.html" %}
+  <h1>Where Do We Deliver To?</h1>
+  <p>Enter your postcode to see if we deliver to you!</p>
+  <form name="postcodeform" action="" method="post">
+  <input type="text" id="postcode" name="postcode"/>
+  <input type="submit" id="submit" name="submit"/>
+  </form>
+{% include "footer.html" %}
+</div>
+</body>
+</html>
+
+

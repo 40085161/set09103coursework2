@@ -1,0 +1,50 @@
+Advanced Web Tech Coursework 2 - Report
+Liam Rawsthorne, 40085161
+
+
+Introduction
+
+The web app that has been developed for the coursework is an online pizza
+ordering website made with python flask.
+
+The website has a search box that would let you know if your postcode is
+delivered to (but it doesn't work). It has an order page where you can view the
+pizzas that are sold. When clicking on "buy now" you are taken to a page that
+shows which pizza you have chosen. There is a login page, when the user logs in
+a session is created and they can access a secret members page, if the session
+is not set then they cannot access this page.
+
+
+Design
+
+The web app is structured with a main .py file, a static folder for css, an etc
+folder for the config file, a templates folder for the html pages and a var
+folder for databasse and log files.
+
+The website has an index, an order page, a login page, an account page, a page
+for each pizza and a 404 page.
+
+
+Enhancements
+
+Due to not knowing how, the website doesn't actually ask for a payment. If I
+knew how to I would redirect the user to PayPal to make their payment. I
+would've also liked to have included bootstrap and encryption.
+
+
+Evaluation
+
+I feel the website is alright, but it could be improved upon greatly. I spent
+too much time working on things that I could not get to work.
+
+
+Personal Evaluation
+
+I feel like I have learned a lot from this. I have learned how to use sqlite, I
+understand what logging is used for and I have a better understanding of python
+flask in general.
+
+Resources
+
+Advanced Web Tech Workbook and Notes- Moodle
+stackoverflow.com

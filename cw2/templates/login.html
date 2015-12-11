@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="static/style.css"/>
+<meta charset="UTF-8">
+</head>
+
+<body>
+{% include "header.html" %}
+
+<h1>Login</h1>
+<form name="login_form" action="" method="post">
+Username: <input type="text" name="username" id="username" value="{{
+request.form.username }}"></input><br />
+Password: <input type="password" name="password" id="password" value="{{
+request.form.password }}"></input><br /><br />
+<input type="submit">
+</form>
+
+{% include "footer.html" %}
+</body>
+</html>

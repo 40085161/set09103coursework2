@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="static/style.css"/>
+<meta charset="UTF-8">
+</head>
+
+<body>
+{% include "header.html" %}
+{% for item in pizzas %}
+<h1>{{ item.name }}</h1>
+<p>{{ item.description }}</p>
+<p>£{{ item.price }}.00</p>
+<a href="/order/{{ item.name }}">Buy Now</a>
+{% endfor %}
+{% include "footer.html" %}
+</body>
+</html>
+
